@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A small collection of public-domain quotations for a moment of reflection."
+    />
+    <meta name="theme-color" content="#17231f" />
+    <title>Commonplace | A Quote for Today</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./src/app.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="./" aria-label="Commonplace home">
+        COMMONPLACE<span class="wordmark-divider"> / </span>QUOTES
+      </a>
+      <p class="edition-mark"><span>FIELD NOTES</span><span>NO. 01</span></p>
+    </header>
+
+    <main id="main-content">
+      <section class="quote-stage" aria-labelledby="stage-title">
+        <div class="stage-topline">
+          <h1 id="stage-title">A thought to keep.</h1>
+          <p class="collection-mark"><span class="collection-dot"></span>THE COMMONPLACE COLLECTION</p>
+        </div>
+
+        <figure class="quote-figure">
+          <blockquote id="quote-text" aria-live="polite" aria-atomic="true">
+            Brevity is the soul of wit.
+          </blockquote>
+          <figcaption id="quote-author">William Shakespeare, Hamlet</figcaption>
+        </figure>
+
+        <div class="quote-actions">
+          <button class="new-quote-button" id="new-quote" type="button">
+            <span>New quote</span>
+            <span class="button-arrow" aria-hidden="true">&#8599;</span>
+          </button>
+          <button class="favorite-toggle" id="favorite-toggle" type="button" aria-pressed="false">
+            Save quote
+          </button>
+          <p class="selection-note"><span id="quote-count">01 / 08</span><span>PUBLIC-DOMAIN TEXTS</span></p>
+        </div>
+      </section>
+
+      <section class="favorites-panel" aria-labelledby="favorites-heading">
+        <div class="favorites-heading-row">
+          <h2 id="favorites-heading">Kept close</h2>
+          <p id="favorites-count" class="favorites-count">0 SAVED</p>
+        </div>
+        <p id="favorites-empty" class="favorites-empty">Your saved quotes will appear here.</p>
+        <ul id="favorites-list" class="favorites-list"></ul>
+      </section>
+      <p id="storage-status" class="storage-status" role="status" aria-live="polite"></p>
+    </main>
+
+    <footer class="site-footer">
+      <span>COMMONPLACE, EST. MMXXIV</span>
+      <span>WORDS WORTH KEEPING</span>
+    </footer>
+  </body>
+</html>
